@@ -14,6 +14,7 @@ class Command(ScrapyCommand):
         return "[options] <spider>"
 
     def short_desc(self):
+        #修改
         return "Run all spider"
 
     def add_options(self, parser):
@@ -47,7 +48,7 @@ class Command(ScrapyCommand):
                                  " from the supported list %s" % (opts.output_format,
                                                                   tuple(valid_output_formats)))
             self.settings.set('FEED_FORMAT', opts.output_format, priority='cmdline')
-
+    #主要修改下面内容
     def run(self, args, opts):
         #获取爬虫列表
         spd_loader_list = self.crawler_process.spider_loader.list()

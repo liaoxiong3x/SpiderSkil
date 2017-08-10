@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for testSpider project
+# Scrapy settings for SpiderSkill_1 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,17 +9,17 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'testSpider'
+BOT_NAME = 'SpiderSkill_1'
 
-SPIDER_MODULES = ['testSpider.spiders']
-NEWSPIDER_MODULE = 'testSpider.spiders'
+SPIDER_MODULES = ['SpiderSkill_1.spiders']
+NEWSPIDER_MODULE = 'SpiderSkill_1.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'testSpider (+http://www.yourdomain.com)'
+#USER_AGENT = 'SpiderSkill_1 (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'testSpider.middlewares.TestspiderSpiderMiddleware': 543,
+#    'SpiderSkill_1.middlewares.Spiderskill1SpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'testSpider.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'SpiderSkill_1.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'testSpider.pipelines.TestspiderPipeline': 300,
+#    'SpiderSkill_1.pipelines.Spiderskill1Pipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -90,4 +90,4 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 #运行全部爬虫程序命令配置
-COMMANDS_MODULE='testSpider.mycmd'
+COMMANDS_MODULE='SpiderSkill_1.mycmd'
